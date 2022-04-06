@@ -4,27 +4,19 @@
     <title>TV Online</title>
     <link href="/video-js.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="./index.css" />
-    <script defer type="module" src="./app.js"></script>
     <script src="video-js.min.js"></script>
-
+    <script defer type="module" src="./app.js"></script>
+    <script defer src="videojs-contrib-hls.min.js"></script>
 </head>
 <body>
     <!-- FONTE: https://www.cxtv.com.br/ -->
     <!-- FONTE: https://tv0800.xyz/ -->
-    <h1 id="currentChannel">Tv Anime</h1>
-    <video id="rs21" width="640" height="360" class="video-js vjs-default-skin" controls>
-        <!-- <source src="https://srv4.zcast.com.br/tvnovaplay/tvnovaplay/chunklist_w1405076796.m3u8" type="application/x-mpegURL"> TV Cine 
-        <source src="https://5b33b873179a2.streamlock.net:1443/live/livestream/chunklist_w1665433577.m3u8" type="application/x-mpegURL"> Cultura
-        <source src="https://stmv1.srvif.com/animetv/animetv/chunklist_w2138681137.m3u8" type="application/x-mpegURL"> Tv Anime
-        <source src="https://assistirtv.xyz/paramount/video.m3u8?token=034c62ccede1601268b19532636fad622c5939ee-f38a67ed163708494192a381d05630e3-1649250562-1649246962&remote=172.71.6.58" type="application/x-mpegURL"> Paramount
-        <source src="https://assistirtv.xyz/discovery-channel/video.m3u8?token=b54818cba70953a06f96cc0c12e66f4ba37d36a0-6f508ede98ad7d8ffeb3ec54a8a0d584-1649248933-1649245333&remote=172.68.26.36" type="application/x-mpegURL"> Discovery Channel
-        <source src="https://assistirtv.xyz/warner/video.m3u8?token=d1aa24c4bfc281e3ae14c210f86b16ee9896ad5f-a63ff9d2c874828e3ff4c31424e143e2-1649250872-1649247272&remote=172.68.26.4" type="application/x-mpegURL"> WB -->
-        <source src="https://assistirtv.xyz/tnt-serie/video.m3u8?token=01259d1f69cd80b1a11a98c941c20fa6567eee24-93f3671b038f207eafaa22e731efb6c1-1649250875-1649247275&remote=172.68.26.4" type="application/x-mpegURL"> TNT SERIE 
-    </video>
+    <section id="content">
+        <nav id="menuChannel">
+            <ul></ul>
+        </nav>
+    </section>  
+
 </body>
-<script src="videojs-contrib-hls.min.js"></script>
-<script>
-    var player = videojs('rs21');
-    player.play();
-</script>
+
 </html>

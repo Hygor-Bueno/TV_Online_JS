@@ -1,0 +1,46 @@
+body{
+    display:flex;
+    height:100vh;
+    width:100vw;
+    background: rgba(0,0,0,.4);
+}
+body,h1,section,ul{
+    margin:0px;
+    padding: 0px;
+}
+#content{
+    display:flex;
+    flex-direction:row;
+    height:100%;
+    width: 90%;
+    /* background:blue; */
+}
+#div_h_tv{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    /* background:red; */
+    width:100%;
+}
+#menuChannel{
+    display:flex;
+    width:350px;
+}
+
+#menuChannel ul {
+    flex-grow: 1;
+    background: rgba(0,0,0,.4);
+    list-style:none; 
+    border-right: 1px solid #555;
+}
+
+#menuChannel ul li{
+    padding:5px;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+#menuChannel ul li:hover{
+    cursor:pointer;
+}
