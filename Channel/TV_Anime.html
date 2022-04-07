@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>TV Online</title>
+    <link href="../video-js.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="../video-js.min.js"></script>
+    <script defer type="../module" src="./app.js"></script>
+    <script defer src="../videojs-contrib-hls.min.js"></script>
+</head>
+<body>
+    <h1>Tv Anime</h1>
+    <video id="tv_anime" width="640" height="360" class="video-js vjs-default-skin" controls>
+        <source src="https://stmv1.srvif.com/animetv/animetv/chunklist_w2138681137.m3u8" type="application/x-mpegURL">
+    </video>
+</body>
+<script>
+    try{
+        var player = videojs('tv_anime');
+        player.play();
+    }catch(error){
+        console.log(error)
+    }
+</script>
+</html>
