@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>TV Online</title>
+    <link href="../video-js.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="./index.css" />
+    <script src="../video-js.min.js"></script>
+    <script defer type="../module" src="./app.js"></script>
+    <script defer src="../videojs-contrib-hls.min.js"></script>
+</head>
+<body>
+    <h1>Cultura</h1>
+    <video id="tv_anime" width="640" height="360" class="video-js vjs-default-skin" controls>
+        <!-- <source src="https://srv4.zcast.com.br/tvnovaplay/tvnovaplay/chunklist_w1405076796.m3u8" type="application/x-mpegURL"> TV Cine -->
+        <source src="https://5b33b873179a2.streamlock.net:1443/live/livestream/chunklist_w1665433577.m3u8" type="application/x-mpegURL"> Cultura
+        <!-- <source src="https://stmv1.srvif.com/animetv/animetv/chunklist_w2138681137.m3u8" type="application/x-mpegURL"> Tv Anime -->
+    </video>
+</body>
+<script>
+    var player = videojs('tv_anime');
+    player.play();
+</script>
+</html>
